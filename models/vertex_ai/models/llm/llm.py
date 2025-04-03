@@ -110,7 +110,7 @@ class VertexAiLargeLanguageModel(LargeLanguageModel):
             request = google.auth.transport.requests.Request()
             credentials.refresh(request)
             token = credentials.token
-        if "opus" in model or "claude-3-5-sonnet" in model:
+        if "opus" in model or "claude-3-5-sonnet" in model or "claude-3-7-sonnet" in model:
             location = "us-east5"
         else:
             location = "us-central1"
